@@ -11,9 +11,8 @@ export class AppComponent {
   destino!: number;
   valor!: number;
   transferir($event: any) {
-    console.log($event);
-    this.destino = 20;
-    this.valor = 34;
-    console.log(this.destino)
+    console.log($event.valorEmitir);
+    this.destino = $event.valorEmitir.destino;
+    this.valor = $event.valorEmitir.valor;
   }
 }

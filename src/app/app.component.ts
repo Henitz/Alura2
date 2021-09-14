@@ -8,12 +8,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bytebank';
+
   destino!: number;
   valor!: number;
   transferir($event: any) {
-    console.log($event);
-    this.destino = 20;
-    this.valor = 34;
-    console.log(this.destino)
+    console.log($event.valorEmitir.valor);
+    console.log($event.valorEmitir.destino);
+
+    this.destino = $event.valorEmitir.destino;
+    this.valor = $event.valorEmitir.valor;
+
   }
+
+
+
 }
+

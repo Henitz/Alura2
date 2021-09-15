@@ -12,12 +12,9 @@ export class AppComponent {
   destino!: number;
   valor!: number;
   transferir($event: any) {
-    console.log($event.valorEmitir.valor);
-    console.log($event.valorEmitir.destino);
-
+    console.log($event.valorEmitir);
     this.destino = $event.valorEmitir.destino;
     this.valor = $event.valorEmitir.valor;
-
   }
 
 

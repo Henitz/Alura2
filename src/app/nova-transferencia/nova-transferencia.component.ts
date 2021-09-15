@@ -25,6 +25,7 @@ export class NovaTransferenciaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

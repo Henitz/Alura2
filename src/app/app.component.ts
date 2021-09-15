@@ -19,7 +19,8 @@ export class AppComponent {
     /* this.destino = $event.valorEmitir.destino;
     this.valor = $event.valorEmitir.valor; */
 
-    this.transferencia = $event;
+    this.transferencia = $event.valorEmitir;
+    /* corrigido */
 
   }
 }

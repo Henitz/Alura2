@@ -8,7 +8,8 @@ import { EventEmitter } from '@angular/core';
 })
 export class NovaTransferenciaComponent implements OnInit {
 
-  @Output() aoTransferir: EventEmitter<any> = new EventEmitter<any>();
+  @Output()
+  aoTransferir: EventEmitter<any> = new EventEmitter<any>();
 
   valor!: number;
   destino!: number;

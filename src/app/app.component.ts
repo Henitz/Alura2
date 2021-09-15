@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Transferencia } from './transferencia';
 
 
 @Component({
@@ -9,7 +10,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'bytebank';
 
-  transferencia: any;
+  transferencia: Transferencia = {
+    "valor": 0,
+    "destino": 0
+  };
 
   /* destino!: number;
   valor!: number; */
@@ -18,8 +22,10 @@ export class AppComponent {
     /* console.log($event.valorEmitir); */
     /* this.destino = $event.valorEmitir.destino;
     this.valor = $event.valorEmitir.valor; */
+    //console.log($event)
+     this.transferencia.valor = $event.valor;
+     this.transferencia.destino = $event.destino;
 
-    this.transferencia = $event.valorEmitir;
 
 
   }

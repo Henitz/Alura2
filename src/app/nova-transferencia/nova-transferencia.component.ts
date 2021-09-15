@@ -9,18 +9,29 @@ import { EventEmitter } from '@angular/core';
 export class NovaTransferenciaComponent implements OnInit {
 
   @Output()
+  valoresComErro = new EventEmitter<string>()
   aoTransferir: EventEmitter<any> = new EventEmitter<any>();
 
   valor!: number;
   destino!: number;
+  mensagem!: string;
 
   transferir() {
     console.log('Solicitada nova transferencia');
     /* console.log('valor: ', this.valor);
     console.log('destino: ', this.destino); */
     const valorEmitir = {valor: this.valor, destino: this.destino};
-    this.aoTransferir.emit({valorEmitir});
+    this.aoTransferir.emit(valorEmitir);
+
   }
+
+
+
+
+
+
+
+
 
   constructor() { }
 

@@ -20,7 +20,7 @@ export class AppComponent {
     this.valor = $event.valorEmitir.valor; */
 
     this.transferencia = $event.valorEmitir;
-    /* corrigido */
+
 
   }
 }

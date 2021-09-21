@@ -1,5 +1,21 @@
 <!-- <p>extrato works!</p> -->
-<diV>
-  <p>Valor: {{ transferencia.valor }}</p>
-  <p>Destino: {{ transferencia.destino }}</p>
-</diV>
+
+<table>
+  <thead>
+    <th>Data</th>
+    <th>Valor</th>
+    <th>destino</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transferencia of transferencias">
+      <td>{{ transferencia.data |date: "short"}}</td>
+      <td>{{ transferencia.valor | currency }}</td>
+      <td>{{ transferencia.destino }}</td>
+
+      <!-- <td>Data: {{ transferencia.data |date: "short"}}</td>
+      <td>Valor: {{ transferencia.valor }}</td>
+      <td>Destino: {{ transferencia.destino }}</td> -->
+    </tr>
+  </tbody>
+</table>
+

@@ -8,7 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ExtratoComponent implements OnInit {
 
 
- @Input() transferencia: any;
+@Input()
+transferencias: any[] = [];
+
+
 
   constructor() { }
 

@@ -30,7 +30,7 @@ export class AppComponent {
      /* const transferencia ={...$event, data: new Date()};
 
     /*  this.transferencias.push($event); */
-     /* this.transferencias.push(transferencia); */
+     /* this.transferenas.push(transferencia); */
     this.service.adicionar($event);
 
 

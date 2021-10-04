@@ -7,6 +7,7 @@ import { EventEmitter } from '@angular/core';
   styleUrls: ['./nova-transferencia.component.scss']
 })
 export class NovaTransferenciaComponent implements OnInit {
+  [x: string]: any;
 
   @Output()
   aoTransferir: EventEmitter<any> = new EventEmitter<any>();
@@ -14,14 +15,15 @@ export class NovaTransferenciaComponent implements OnInit {
   valor!: number;
   destino!: number;
 
-  transferir() {
+    /* transferir($event: any) {
     console.log('Solicitada nova transferencia');
-    /* console.log('valor: ', this.valor);
-    console.log('destino: ', this.destino); */
-    const valorEmitir = {valor: this.valor, destino: this.destino};
+     console.log('valor: ', this.valor);
+    console.log('destino: ', this.destino);
+    /* const valorEmitir = {valor: this.valor, destino: this.destino};
     this.aoTransferir.emit(valorEmitir);
+    this.service.adicionar($event)
+  }  */
 
-  }
 
 
 

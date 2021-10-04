@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { TranfereciaService } from './tranferecia.service';
+import { TransfereciaService } from './transferecia.service';
 
 describe('TranfereciaService', () => {
-  let service: TranfereciaService;
+  let service: TransfereciaService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(TranfereciaService);
+    service = TestBed.inject(TransfereciaService);
   });
 
   it('should be created', () => {

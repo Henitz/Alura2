@@ -1,4 +1,4 @@
-import { TranfereciaService } from './../services/tranferecia.service';
+import { TransfereciaService } from '../services/transferecia.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -14,7 +14,7 @@ transferencias: any[] = [];
 
 
 
-  constructor(private service: TranfereciaService) { }
+  constructor(private service: TransfereciaService) { }
 
   ngOnInit(): void {
     this.transferencias = this.service.transferencias;

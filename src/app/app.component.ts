@@ -1,4 +1,4 @@
-import { TranfereciaService } from './services/tranferecia.service';
+import { TransfereciaService } from './services/transferecia.service';
 import { Component } from '@angular/core';
 
 
@@ -16,7 +16,7 @@ export class AppComponent {
 
   /* destino!: number;
   valor!: number; */
-  constructor(private service: TranfereciaService) {
+  constructor(private service: TransfereciaService) {
 
   }
   transferir($event: any) {
